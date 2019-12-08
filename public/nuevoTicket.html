@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nuevo Ticket</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/generarTicket.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="nav-link" href="index.html"> Index</a>
+        <a class="nav-link" href="publico.html">Tickets</a>
+    </nav>
+    <div class="mainContent">
+        <div class="generateButtons">
+            <div class="ticketOptions"> Ventanilla Especial</div>
+            <div class="ticketOptions"> Ventanilla Rapida</div>
+            <div class="ticketOptions"> Caja</div>
+        </div>
+
+        <div class="ticketsInfo">
+            <div>
+                <span id="lblNuevoTicketEspecial">
+                    Cargando...
+                </span>
+                <button class="btn btn-secondary btn-lg" id="especial">
+                    Generar Ticket
+                </button>
+            </div>
+            <div>
+                <span id="lblNuevoTicketRapida">
+                    Cargando...
+                </span>
+                <button class="btn btn-secondary btn-lg" id="rapida">
+                    Generar Ticket
+                </button>
+            </div>
+            <div>
+                <span id="lblNuevoTicketCaja">
+                    Cargando...
+                </span>
+                <button class="btn btn-secondary btn-lg" id="caja">
+                    Generar Ticket
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="js/socket-nuevoTicket.js"></script>
+
+</body>
+
+</html>
